@@ -37,3 +37,8 @@ function permitirAcceso(persona){
 		console.log('ACCESO CONCEDIDO')
 	}
 }
+
+//const permitirAcceso = ({ edad }) => !esMayorDeEdad({ edad }) ? console.log('Acceso denegado') : console.log('Adelante')
+
+// Esta es otra forma de escribir if, acá se escribe despues del ? lo que hará la funcion si se cumple la condicion
+// y despues de los : lo que hará si no cumple la condicion (else)
