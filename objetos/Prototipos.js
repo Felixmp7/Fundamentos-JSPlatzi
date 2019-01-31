@@ -8,4 +8,12 @@ function Persona(nombre, apellido){
 //  "name"      |
 }
 
-let felix = new Persona('Felix', 'Pacheco')
+
+Persona.prototype.saludar = function () {	//		Acá estoy creando un metodo saludar dentro del prototipo
+	console.log(`Hola, me llamo ${this.name} ${this.lastName}`) 
+} 
+
+
+let Felix = new Persona('Felix', 'Pacheco')
+let Gabriel = new Persona('Gabriel', 'Pacheco')
+let Jose = new Persona('José', 'Tapiquen')
