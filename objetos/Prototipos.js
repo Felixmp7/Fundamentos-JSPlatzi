@@ -30,11 +30,14 @@ function Persona(nombre, apellido, altura){
 
 
 Persona.prototype.decirSiEsAlto = function () {
-	if (this.height >= 1.8) {
+
+	this.height >= 1.8 ? console.log(`Me llamo ${this.name} ${this.lastName} y soy alto`)
+		: console.log(`Me llamo ${this.name} ${this.lastName} y soy bajito`)
+	/*if (this.height >= 1.8) {
 		console.log(`Me llamo ${this.name} ${this.lastName} y soy alto`)
 	} else {
 		console.log(`Me llamo ${this.name} ${this.lastName} y soy bajito`)
-	}
+	}*/
 } 
 
 let Felix = new Persona('Felix', 'Pacheco', 1.6)
