@@ -11,4 +11,4 @@ for (var i = 1; i <= 10000000009; i++) {
 // Está en la cola de tareas de javascript, mientras que en la cola de ejecuciones está sólo el for, pero...
 // como el for (en este caso) tarda muchisimo en terminarse, el setTimeout no puede pasarse a la cola de ejecuciones
 // hasta que ésta no esté vacía. Por eso el mensaje se tarda mas de 3s en ejecutarse y termina ejecutandose casi a 
-// los 5 min
+// los 5 mientras
