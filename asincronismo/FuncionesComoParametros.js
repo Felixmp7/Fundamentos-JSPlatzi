@@ -49,5 +49,6 @@ let Gabriel = new Persona('Gabriel', 'Pacheco', 1.8)
 let Jose = new Persona('José', 'Tapiquen', 1.82)
 
 Felix.saludar(responderSaludo)
+console.log(responderSaludo)
 Gabriel.saludar()
 Jose.saludar(responderSaludo)
