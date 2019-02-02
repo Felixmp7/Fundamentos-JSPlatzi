@@ -3,13 +3,11 @@ const PEOPLE_URL = 'people/:id'
 
 //Para mostrar 5 personajes a mi manera
 
-let id = 0
-for(id = 1; id <= 5; id++){
-
+for(let id = 1; id <= 5; id++){
 	const characterUrl = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 	const options = { crossDomain: true }
 	const onCharacterResponse = function (character){
-		console.log(`Hola, soy ${character.name}`)
+		console.log(`Hola, soy ${character.name} y soy el personaje numero ${id}`)
 	}
 
 	$.get(characterUrl, options, onCharacterResponse)
