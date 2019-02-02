@@ -34,7 +34,7 @@ obtenerPersonaje(1)
 		console.log(`Hola, soy ${personaje4.name}`)
 		return obtenerPersonaje(5)
 	})
-	.then(personaje4 => {
-		console.log(`Hola, soy ${personaje4.name}`)
+	.then(personaje5 => {
+		console.log(`Hola, soy ${personaje5.name}`)
 	})
 	.catch(onError)
