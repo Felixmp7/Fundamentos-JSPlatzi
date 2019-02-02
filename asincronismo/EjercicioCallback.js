@@ -22,19 +22,30 @@ const options = { crossDomain: true }
 function obtenerPersonaje(id, callback){
 	const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 
-	$.get(url, options, function (character){
-			console.log(`Hola, soy ${character.name}`)
-			if (callback) {
-				callback()
-			}
-		})
+	$.get(url, options,callback).fail(function(){
+		console.log(`Ocurrió un error inesperado al obtener al personaje ${id}`)
+	})
 }
 
-obtenerPersonaje(1, function(){
-	obtenerPersonaje(2, function(){
-		obtenerPersonaje(3, function(){
-			obtenerPersonaje(4, function() {
-				obtenerPersonaje(5)
+obtenerPersonaje(1, function(character){
+	console.log(`Hola, soy ${character.name}`)
+
+	obtenerPersonaje(2, function(character){
+		console.log(`Hola, soy ${character.name}`)
+
+
+		obtenerPersonaje(3, function(character){
+			console.log(`Hola, soy ${character.name}`)
+	
+
+			obtenerPersonaje(4, function(character){
+				console.log(`Hola, soy ${character.name}`)
+		
+
+				obtenerPersonaje(5, function(character){
+					console.log(`Hola, soy ${character.name}`)
+			
+				})
 			})
 		})
 	})
