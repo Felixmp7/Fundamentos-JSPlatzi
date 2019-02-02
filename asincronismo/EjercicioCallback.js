@@ -22,9 +22,9 @@ const options = { crossDomain: true }
 function obtenerPersonaje(id, callback){
 	const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 
-	$.get(url, options,callback).fail(function(){
-		console.log(`Ocurrió un error inesperado al obtener al personaje ${id}`)
-	})
+	$
+		.get(url, options,callback)
+		.fail(()=> console.log(`Ocurrió un error inesperado al obtener al personaje ${id}`))
 }
 
 obtenerPersonaje(1, function(character){
