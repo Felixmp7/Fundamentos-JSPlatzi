@@ -17,10 +17,9 @@ function onError(id){
 	console.log(`Ocurrió un error inesperado al obtener al personaje ${id}`)
 }
 
-async function obtenerPersonajes(){
+async function obtenerDatos(){
 	let ids = [1,2,3,4,5,6,7]
 	let promesas = ids.map(id => obtenerPersonaje(id))
-	//console.log(promesas)
 	try{
 
 		let personajes = await Promise.all(promesas)
@@ -31,4 +30,4 @@ async function obtenerPersonajes(){
 	}
 }
 
-obtenerPersonajes()
+obtenerDatos()
