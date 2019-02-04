@@ -18,8 +18,8 @@ function onError(id){
 }
 
 obtenerPersonaje(1)
-	.then(function(datos){
-		console.log(`Hola, soy ${datos.name}`)
+	.then(function(personaje){
+		console.log(`Hola, soy ${personaje.name}`)
 	})
 	.catch(onError)
 
@@ -39,7 +39,7 @@ obtenerPersonaje(1)
 	lo que quieras" (Linea 10)
 
 6. Entonces indicamos a la funcion obtenerPersonaje(1) lo que debe hacer si la promesa ocurrió exitosamente, mediante
-	el .then(function(datos)) pasandole como parametro los datos enviados por el resolve(). (Linea 21) 
+	el .then(function(personaje)) pasandole como parametro los datos enviados por el resolve(). (Linea 21) 
 
 7. Mismo procedimiento si ocurre un error, cae en el reject() y luego entra en el catch().
 
