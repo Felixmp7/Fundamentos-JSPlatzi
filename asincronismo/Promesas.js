@@ -34,16 +34,14 @@ obtenerPersonaje(1)
 	la informacion que estoy pidiendo como parámetro. (Linea 9)
 
 5. En éste punto se asume que la petición ocurrió sin errores, se obtuvieron los datos y entonces ejecutamos
-	resolve(datos) pasandole como parametro, los datos que va a utilizar. En otras palabras el resolve le dice
+	resolve(datos) pasandole como parametro los datos que va a utilizar. En otras palabras el resolve le dice
 	a nuestra funcion obtenerPersonaje(1) : "Ok! tengo los datos del personaje 1, te los mando y haz con ellos
 	lo que quieras" (Linea 10)
 
 6. Entonces indicamos a la funcion obtenerPersonaje(1) lo que debe hacer si la promesa ocurrió exitosamente, mediante
-	el .then(function(personaje)) pasandole como parametro los datos enviados por el resolve(). (Linea 21) 
+	el .then(function(personaje)) pasandole como parametro los datos enviados por el resolve(). (Linea 21)
 
 7. Mismo procedimiento si ocurre un error, cae en el reject() y luego entra en el catch().
 
 
 */
-
-

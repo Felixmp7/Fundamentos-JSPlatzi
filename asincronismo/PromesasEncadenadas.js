@@ -38,3 +38,5 @@ obtenerPersonaje(1)
 		console.log(`Hola, soy ${personaje5.name}`)
 	})
 	.catch(onError)
+
+	console.log(`Hola, en que orden creías que iba a ejecutarme en consola?`)
